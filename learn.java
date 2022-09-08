@@ -40,3 +40,25 @@ public static void main(String[] args) {
     }
 
 
+// Palindrome in java
+public static void main(String[] args) {
+        String name = "malayalam";
+        String reversed = "";
+
+        for (int i = name.length() - 1; i >= 0; i--) {
+            reversed = reversed + name.charAt(i);
+//            System.out.println(reversed);
+
+        }
+        if (name.equals(reversed)) {
+            System.out.println("Palindrome");
+        }
+        else {
+            System.out.println("Not a palindrome");
+        }
+//            sbd.append(name);
+//            System.out.println(sbd);
+        }
+
+
+
