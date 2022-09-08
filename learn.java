@@ -17,9 +17,7 @@ public class learn {
 
         for (int i = 3; i <= number; i++) {
             fibonacci = a + b;
-            System.out.println("a" +a);
             a = b;
-            System.out.println("b" + b);
             b = fibonacci;
             System.out.println(fibonacci + " ");
         }
@@ -27,5 +25,21 @@ public class learn {
 
 }
 
+// Program for prime number
 
-// charAt()
+public static void main(String[] args) {
+        int a = 10;
+
+        for (int i = 0; i <= a; i++) {
+            if (i == 1) {
+                System.out.print("");
+            }
+            else if ((i % 2) != 0) {
+                System.out.println(i);
+            }
+        }
+
+
+    }
+
+
