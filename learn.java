@@ -3,12 +3,8 @@ package com.jetbrains;
 import java.util.*;
 
 public class learn {
-    static int fibonacci2(int number) {
-        if(number == 1 || number == 2) {
-            return 1;
-        }
-        return fibonacci2(number - 1) + fibonacci2(number + 1);
-    }
+    
+    // program for fibonacci series 
     public static void main(String[] args) {
         int a = 1;
         int b = 1;
@@ -26,6 +22,7 @@ public class learn {
 }
 
 // Program for prime number
+
 
 public static void main(String[] args) {
         int a = 10;
