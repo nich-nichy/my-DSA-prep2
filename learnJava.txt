@@ -31,3 +31,19 @@ public class learn {
 // charAt()
 
 // Program for prime number
+// Program for prime number
+
+public static void main(String[] args) {
+        int a = 10;
+
+        for (int i = 0; i <= a; i++) {
+            if (i == 1) {
+                System.out.print("");
+            }
+            else if ((i % 2) != 0) {
+                System.out.println(i);
+            }
+        }
+
+
+    }
