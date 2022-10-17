@@ -1,64 +1,35 @@
-package com.jetbrains;
-
 import java.util.*;
 
 public class learn {
-    
-    // program for fibonacci series 
     public static void main(String[] args) {
-        int a = 1;
-        int b = 1;
-        int fibonacci = 1;
-        int number = 10;
+        int arr[] = new int[100];
+        int target = 42;
 
-        for (int i = 3; i <= number; i++) {
-            fibonacci = a + b;
-            a = b;
-            b = fibonacci;
-            System.out.println(fibonacci + " ");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i;
+        }
+        int bn = binarySearch(arr, target);
+        if (bn == -1) {
+            System.out.println("Nope");
+        } else {
+            System.out.println(bn);
         }
     }
-
+    private static int binarySearch(int arr[], int target) {
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int middle = low + (high - low) / 2;
+            int value = arr[middle];
+            System.out.println(value);
+            if (value < target) {
+                low = middle + 1;
+            } else if (value > target) {
+                high = middle - 1;
+            } else {
+                return middle;
+            }
+        }
+        return -1;
+    }
 }
-
-// Program for prime number
-
-
-public static void main(String[] args) {
-        int a = 10;
-
-        for (int i = 0; i <= a; i++) {
-            if (i == 1) {
-                System.out.print("");
-            }
-            else if ((i % 2) != 0) {
-                System.out.println(i);
-            }
-        }
-
-
-    }
-
-
-// Palindrome in java
-public static void main(String[] args) {
-        String name = "malayalam";
-        String reversed = "";
-
-        for (int i = name.length() - 1; i >= 0; i--) {
-            reversed = reversed + name.charAt(i);
-//            System.out.println(reversed);
-
-        }
-        if (name.equals(reversed)) {
-            System.out.println("Palindrome");
-        }
-        else {
-            System.out.println("Not a palindrome");
-        }
-//            sbd.append(name);
-//            System.out.println(sbd);
-        }
-
-
-
